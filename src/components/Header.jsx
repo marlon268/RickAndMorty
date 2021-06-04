@@ -14,7 +14,7 @@ const Header = ({ handleClick }) => {
           onClick={handleClick}
           className={!theme ? "button button-dark" : "button button-light"}
         >
-          {theme ? "Dark" : "Light"}
+          {theme ? "Dark mode" : "Light mode"}
         </button>
       </div>
     </div>

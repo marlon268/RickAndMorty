@@ -1,27 +1,47 @@
+:root {
+  --color-light: rgb(221, 221, 221);
+  --color-boder: rgb(151, 151, 151);
+  --color-dark: rgb(32, 32, 32);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-.contenedor {
+main {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(221, 221, 221);
+}
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-light);
+  min-height: 100vh;
 }
 
 .dark-mode {
-  background-color: rgb(32, 32, 32);
+  background-color: var(--color-dark);
   color: white;
 }
 
 .dark-mode .boton-añadir {
-  background-color: rgb(32, 32, 32);
+  background-color: var(--color-dark);
   color: white;
   border: 1px solid white;
 }
 .dark-mode .boton-borrar {
-  background-color: rgb(32, 32, 32);
+  background-color: var(--color-dark);
   color: white;
+}
+
+.dark-mode .Search-input {
+  background-color: var(--color-dark);
+  color: white;
+}
+.dark-mode .Search-input::placeholder {
+  color: rgb(180, 180, 180);
 }

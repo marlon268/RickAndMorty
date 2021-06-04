@@ -1,59 +1,68 @@
+:root {
+  --color-light: rgb(221, 221, 221);
+  --color-boder: rgb(151, 151, 151);
+  --color-dark: rgb(32, 32, 32);
+}
+
 .Header {
-    display: flex;
-    width: 80%;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .Header h1 {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 .Header-button {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 20px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
 }
 .button-light {
-    background-color: rgb(221, 221, 221);
-    border: 1px solid rgb(151, 151, 151);
-    width: 75px;
-    height: 25px;
+  background-color: var(--color-light);
+  border: 1px solid var(--color-boder);
+  width: 75px;
+  height: 25px;
 }
 .button-light:hover {
-   background-color: rgb(32, 32, 32);
-   color: white;
-   transition: 0.7s;
+  background-color: var(--color-dark);
+  color: white;
+  transform: scale(0.9);
+  transition: 0.5s;
 }
 .button-dark {
-    background-color: rgb(32, 32, 32);
-    border: 1px solid rgb(151, 151, 151);
-    color: white;
-    width: 75px;
-    height: 25px;
+  background-color: var(--color-dark);
+  border: 1px solid var(--color-boder);
+  color: white;
+  width: 75px;
+  height: 25px;
 }
 .button-dark:hover {
-    background-color: rgb(221, 221, 221);
-    color: black;
-    transition: 1s;
- }
+  background-color: var(--color-light);
+  color: black;
+  transform: scale(0.9);
+  transition: 0.5s;
+}
 .button {
-    border-radius: 10px;
+  width: 7rem;
+  border-radius: 10px;
 }
 @media (max-width: 500px) {
-    .Header {
-        display: flex;
-        min-width: 100%;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 20px;
-    }
-    .Header h1{
-        font-size: 2rem;
-        width: 300px;
-    }
-    .Header-button {
-        padding: 0;
-    }
+  .Header {
+    display: flex;
+    min-width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .Header h1 {
+    font-size: 2rem;
+    width: 300px;
+  }
+  .Header-button {
+    padding: 0;
+  }
 }
