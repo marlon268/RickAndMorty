@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 
-const useCharacters = url => {
+const useCharacters = (url) => {
     const [characters, setCharacters] = useState([]);
     useEffect(() => {
         fetch(url)
